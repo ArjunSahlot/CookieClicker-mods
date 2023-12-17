@@ -22,13 +22,13 @@ plantableJQB.launch = function() {
         }, 'Farm');
 
         plantableJQB.isLoaded = 1;
-        if (CCSE.ConfirmGameVersion(plantableJQB.name, plantableJQB.version, plantableJQB.GameVersion)) {
-            Game.registerMod(plantableJQB.name, plantableJQB);
-        }
         if (Game.prefs.popups) Game.Popup(startupString);
         else                   Game.Notify(startupString, '', '', 0, 1);
         console.log("STEP 5");
     };
+    if (CCSE.ConfirmGameVersion(plantableJQB.name, plantableJQB.version, plantableJQB.GameVersion)) {
+        Game.registerMod(plantableJQB.name, plantableJQB);
+    }
 };
 
 if (!plantableJQB.isLoaded) {
