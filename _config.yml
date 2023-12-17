@@ -1,0 +1,23 @@
+# Site settings
+title: Arjun's Cookie Clicker Mods
+email: iarjun.sahlot@gmail.com
+description: Arjun's Cookie Clicker Mods
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://arjunsahlot.github.io/CookieClicker-mods/" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
