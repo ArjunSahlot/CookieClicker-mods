@@ -6,12 +6,12 @@ plantableJQB.GameVersion = "2.052";
 
 plantableJQB.launch = function() {
 	plantableJQB.init = function () {
-		let startupString = "Juicy Queenbeet not found, couldn't be set to plantable.";
+		let startupStr = "Juicy Queenbeet not found, couldn't be set to plantable.";
 		CCSE.MinigameReplacer(function() {
 			var M = Game.Objects["Farm"].minigame;
 			if (M.plants["queenbeetLump"]) {
 				M.plants["queenbeetLump"].plantable = true;
-				startupString = "Juicy Queenbeet is now plantable!";
+				startupStr = "Juicy Queenbeet is now plantable!";
 			}
 		}, "Farm");
 	
